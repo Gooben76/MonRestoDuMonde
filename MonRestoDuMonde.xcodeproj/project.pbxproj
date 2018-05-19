@@ -13,6 +13,9 @@
 		17B0CAAF20B05CB500A22175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B0CAAD20B05CB500A22175 /* LaunchScreen.storyboard */; };
 		17B0CABC20B063AD00A22175 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CABB20B063AD00A22175 /* MenuController.swift */; };
 		17B0CABE20B063E500A22175 /* ALaCarteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CABD20B063E500A22175 /* ALaCarteController.swift */; };
+		17B0CAC120B066FA00A22175 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CAC020B066FA00A22175 /* Constantes.swift */; };
+		17B0CAC520B067FD00A22175 /* MonTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CAC420B067FD00A22175 /* MonTabBar.swift */; };
+		17B0CAC720B08B3300A22175 /* MonNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CAC620B08B3300A22175 /* MonNav.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		17B0CAB020B05CB500A22175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17B0CABB20B063AD00A22175 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		17B0CABD20B063E500A22175 /* ALaCarteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarteController.swift; sourceTree = "<group>"; };
+		17B0CAC020B066FA00A22175 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		17B0CAC420B067FD00A22175 /* MonTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonTabBar.swift; sourceTree = "<group>"; };
+		17B0CAC620B08B3300A22175 /* MonNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonNav.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		17B0CAA320B05CB000A22175 /* MonRestoDuMonde */ = {
 			isa = PBXGroup;
 			children = (
+				17B0CABF20B066DA00A22175 /* Utilitaire */,
 				17B0CAB820B0623600A22175 /* Controlleur */,
 				17B0CAB720B0621600A22175 /* Vue */,
 				17B0CAB620B061F100A22175 /* Modele */,
@@ -87,8 +94,18 @@
 			children = (
 				17B0CABB20B063AD00A22175 /* MenuController.swift */,
 				17B0CABD20B063E500A22175 /* ALaCarteController.swift */,
+				17B0CAC420B067FD00A22175 /* MonTabBar.swift */,
+				17B0CAC620B08B3300A22175 /* MonNav.swift */,
 			);
 			path = Controlleur;
+			sourceTree = "<group>";
+		};
+		17B0CABF20B066DA00A22175 /* Utilitaire */ = {
+			isa = PBXGroup;
+			children = (
+				17B0CAC020B066FA00A22175 /* Constantes.swift */,
+			);
+			path = Utilitaire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B0CAC520B067FD00A22175 /* MonTabBar.swift in Sources */,
 				17B0CABC20B063AD00A22175 /* MenuController.swift in Sources */,
+				17B0CAC720B08B3300A22175 /* MonNav.swift in Sources */,
+				17B0CAC120B066FA00A22175 /* Constantes.swift in Sources */,
 				17B0CAA520B05CB000A22175 /* AppDelegate.swift in Sources */,
 				17B0CABE20B063E500A22175 /* ALaCarteController.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  MenuController.swift
+//  MonTabBar.swift
 //  MonRestoDuMonde
 //
 //  Created by Benoît Goossens on 19/05/18.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MenuController: UIViewController {
+class MonTabBar: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Les menus du monde"
+        tabBar.barTintColor = GRIS_TRES_FONCE
+        tabBar.tintColor = GRIS_TRES_CLAIR
     }
 
 }
