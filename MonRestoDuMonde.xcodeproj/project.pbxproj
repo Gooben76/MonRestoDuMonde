@@ -17,6 +17,8 @@
 		17B0CAC520B067FD00A22175 /* MonTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CAC420B067FD00A22175 /* MonTabBar.swift */; };
 		17B0CAC720B08B3300A22175 /* MonNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CAC620B08B3300A22175 /* MonNav.swift */; };
 		17B0CACB20B09D1800A22175 /* CellCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CACA20B09D1800A22175 /* CellCollection.swift */; };
+		17B0CACD20B0A33B00A22175 /* Plat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CACC20B0A33B00A22175 /* Plat.swift */; };
+		17B0CACF20B0A3CA00A22175 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CACE20B0A3CA00A22175 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		17B0CAC420B067FD00A22175 /* MonTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonTabBar.swift; sourceTree = "<group>"; };
 		17B0CAC620B08B3300A22175 /* MonNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonNav.swift; sourceTree = "<group>"; };
 		17B0CACA20B09D1800A22175 /* CellCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollection.swift; sourceTree = "<group>"; };
+		17B0CACC20B0A33B00A22175 /* Plat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plat.swift; sourceTree = "<group>"; };
+		17B0CACE20B0A3CA00A22175 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 		17B0CAB620B061F100A22175 /* Modele */ = {
 			isa = PBXGroup;
 			children = (
+				17B0CACC20B0A33B00A22175 /* Plat.swift */,
+				17B0CACE20B0A3CA00A22175 /* Enums.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				17B0CAC120B066FA00A22175 /* Constantes.swift in Sources */,
 				17B0CAA520B05CB000A22175 /* AppDelegate.swift in Sources */,
 				17B0CABE20B063E500A22175 /* ALaCarteController.swift in Sources */,
+				17B0CACD20B0A33B00A22175 /* Plat.swift in Sources */,
+				17B0CACF20B0A3CA00A22175 /* Enums.swift in Sources */,
 				17B0CACB20B09D1800A22175 /* CellCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
