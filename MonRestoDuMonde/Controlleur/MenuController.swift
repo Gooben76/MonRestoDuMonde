@@ -22,6 +22,10 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        let vue = UIView(frame: collectionView.bounds)
+        vue.layer.addSublayer(Degrade())
+        collectionView.backgroundView = vue
+        
         menus = LesPlats.obtenir.lesMenus()
         collectionView.reloadData()
     }
@@ -32,7 +36,8 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as? CellCollection {
-            cell.backgroundColor = GRIS_TRES_FONCE
+            let menu = menus[indexPath.item]
+            cell.miseEnPlace(menu: menu)
             return cell
         }
         return UICollectionViewCell()
@@ -41,7 +46,7 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let largeur = collectionView.frame.width / 2 - 10
         
-        return CGSize(width: largeur, height: 120)
+        return CGSize(width: largeur, height: 200)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
