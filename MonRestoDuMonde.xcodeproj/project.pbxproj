@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		17B0CAA520B05CB000A22175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CAA420B05CB000A22175 /* AppDelegate.swift */; };
-		17B0CAA720B05CB000A22175 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CAA620B05CB000A22175 /* ViewController.swift */; };
 		17B0CAAA20B05CB000A22175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B0CAA820B05CB000A22175 /* Main.storyboard */; };
 		17B0CAAC20B05CB500A22175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B0CAAB20B05CB500A22175 /* Assets.xcassets */; };
 		17B0CAAF20B05CB500A22175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B0CAAD20B05CB500A22175 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		17B0CAA120B05CB000A22175 /* MonRestoDuMonde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonRestoDuMonde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B0CAA420B05CB000A22175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17B0CAA620B05CB000A22175 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17B0CAA920B05CB000A22175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17B0CAAB20B05CB500A22175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17B0CAAE20B05CB500A22175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				17B0CAA420B05CB000A22175 /* AppDelegate.swift */,
-				17B0CAA620B05CB000A22175 /* ViewController.swift */,
 				17B0CAA820B05CB000A22175 /* Main.storyboard */,
 				17B0CAAB20B05CB500A22175 /* Assets.xcassets */,
 				17B0CAAD20B05CB500A22175 /* LaunchScreen.storyboard */,
@@ -135,7 +132,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B0CAA720B05CB000A22175 /* ViewController.swift in Sources */,
 				17B0CAA520B05CB000A22175 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
