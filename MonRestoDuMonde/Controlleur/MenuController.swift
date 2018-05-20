@@ -13,6 +13,7 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     let cellID = "menuCell"
+    let segueID = "VersDetail"
     
     var menus = [Menu]()
     
@@ -37,6 +38,7 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as? CellCollection {
             let menu = menus[indexPath.item]
+            print("J'ai chargé le menu \(menu.pays) en position \(indexPath.item)")
             cell.miseEnPlace(menu: menu)
             return cell
         }
@@ -55,5 +57,21 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let menu = menus[indexPath.item]
+        print("J'ai cliqué sur le menu \(menu.pays) en position \(indexPath.item)")
+        performSegue(withIdentifier: segueID, sender: menu)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID {
+            if let detail = segue.destination as? DetailController {
+                if let menu = sender as? Menu {
+                    detail.menu = menu
+                }
+            }
+        }
     }
 }

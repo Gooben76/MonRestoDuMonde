@@ -95,11 +95,41 @@
                     <navigationItem key="navigationItem" id="kBO-D9-3PF"/>
                     <connections>
                         <outlet property="collectionView" destination="rVb-2b-kn3" id="KTR-xV-fCc"/>
+                        <segue destination="0O1-Ap-YD8" kind="show" identifier="VersDetail" id="AEt-QG-RBo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BSl-YZ-o5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1332" y="-194.75262368815595"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="bVX-eY-l2K">
+            <objects>
+                <viewController id="0O1-Ap-YD8" customClass="DetailController" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZWz-Ih-W79">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-Po-CHX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dCK-Po-CHX" firstAttribute="leading" secondItem="Ieo-rc-QWw" secondAttribute="leading" id="2v9-vL-5fk"/>
+                            <constraint firstItem="dCK-Po-CHX" firstAttribute="top" secondItem="Ieo-rc-QWw" secondAttribute="top" id="8UP-Vi-TvH"/>
+                            <constraint firstItem="dCK-Po-CHX" firstAttribute="trailing" secondItem="Ieo-rc-QWw" secondAttribute="trailing" id="FC2-NQ-UzS"/>
+                            <constraint firstItem="dCK-Po-CHX" firstAttribute="bottom" secondItem="Ieo-rc-QWw" secondAttribute="bottom" id="SbH-5x-chz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ieo-rc-QWw"/>
+                    </view>
+                    <connections>
+                        <outlet property="scroll" destination="dCK-Po-CHX" id="tj3-0q-rKW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hct-CI-KKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2085.5999999999999" y="-195.6521739130435"/>
         </scene>
         <!--Mon Tab Bar-->
         <scene sceneID="qfB-nP-PXr">
