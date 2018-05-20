@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170EB04920B16ED800BFF143 /* PlatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170EB04820B16ED800BFF143 /* PlatCell.swift */; };
+		170EB04B20B1745900BFF143 /* ALaCarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170EB04A20B1745900BFF143 /* ALaCarte.swift */; };
 		17B0CAA520B05CB000A22175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CAA420B05CB000A22175 /* AppDelegate.swift */; };
 		17B0CAAA20B05CB000A22175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B0CAA820B05CB000A22175 /* Main.storyboard */; };
 		17B0CAAC20B05CB500A22175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B0CAAB20B05CB500A22175 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170EB04820B16ED800BFF143 /* PlatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatCell.swift; sourceTree = "<group>"; };
+		170EB04A20B1745900BFF143 /* ALaCarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarte.swift; sourceTree = "<group>"; };
 		17B0CAA120B05CB000A22175 /* MonRestoDuMonde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonRestoDuMonde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B0CAA420B05CB000A22175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B0CAA920B05CB000A22175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				17B0CACE20B0A3CA00A22175 /* Enums.swift */,
 				17B0CAD020B0A59E00A22175 /* Menu.swift */,
 				17B0CAD220B0A71B00A22175 /* LesPlats.swift */,
+				170EB04A20B1745900BFF143 /* ALaCarte.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			children = (
 				17B0CACA20B09D1800A22175 /* CellCollection.swift */,
 				17B0CAD420B0B7F100A22175 /* Degrade.swift */,
+				170EB04820B16ED800BFF143 /* PlatCell.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 				17B0CAC520B067FD00A22175 /* MonTabBar.swift in Sources */,
 				17B0CABC20B063AD00A22175 /* MenuController.swift in Sources */,
 				17B0CAC720B08B3300A22175 /* MonNav.swift in Sources */,
+				170EB04920B16ED800BFF143 /* PlatCell.swift in Sources */,
 				17B0CAC120B066FA00A22175 /* Constantes.swift in Sources */,
 				17B0CAD520B0B7F100A22175 /* Degrade.swift in Sources */,
+				170EB04B20B1745900BFF143 /* ALaCarte.swift in Sources */,
 				17B0CAD120B0A59E00A22175 /* Menu.swift in Sources */,
 				17B0CAA520B05CB000A22175 /* AppDelegate.swift in Sources */,
 				17B0CAD320B0A71B00A22175 /* LesPlats.swift in Sources */,

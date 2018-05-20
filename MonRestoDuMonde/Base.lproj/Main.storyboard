@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -127,13 +128,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZB7-Nm-w8b">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlatCell" rowHeight="131" id="ZB7-Nm-w8b" customClass="PlatCell" customModule="MonRestoDuMonde" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="131"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZB7-Nm-w8b" id="9z6-1z-ORJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rfv-od-CmB">
+                                            <rect key="frame" x="24" y="15.5" width="128" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="128" id="XpD-aF-DYs"/>
+                                                <constraint firstAttribute="height" constant="100" id="arY-On-QhL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hG-pj-lUk">
+                                            <rect key="frame" x="160" y="15.5" width="215" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="w7L-Ah-EPb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Rfv-od-CmB" firstAttribute="leading" secondItem="9z6-1z-ORJ" secondAttribute="leadingMargin" constant="8" id="4fp-GZ-jib"/>
+                                        <constraint firstItem="9hG-pj-lUk" firstAttribute="leading" secondItem="Rfv-od-CmB" secondAttribute="trailing" constant="8" id="cK7-V0-aUM"/>
+                                        <constraint firstItem="Rfv-od-CmB" firstAttribute="centerY" secondItem="9z6-1z-ORJ" secondAttribute="centerY" id="qM7-ay-Mds"/>
+                                        <constraint firstItem="9hG-pj-lUk" firstAttribute="centerY" secondItem="9z6-1z-ORJ" secondAttribute="centerY" id="s41-Bm-hmp"/>
+                                        <constraint firstAttribute="trailing" secondItem="9hG-pj-lUk" secondAttribute="trailing" id="tJF-IY-Xii"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descPlat" destination="9hG-pj-lUk" id="Ku3-1F-8Hf"/>
+                                    <outlet property="imagePlat" destination="Rfv-od-CmB" id="8en-YR-QKp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -145,7 +175,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9O-FB-bZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="493"/>
+            <point key="canvasLocation" x="1332" y="492.50374812593708"/>
         </scene>
         <!--Menu-->
         <scene sceneID="DJH-aT-O9W">
