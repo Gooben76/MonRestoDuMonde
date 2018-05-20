@@ -59,7 +59,7 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return 10
     }
     
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let menu = menus[indexPath.item]
         print("J'ai cliqué sur le menu \(menu.pays) en position \(indexPath.item)")
         performSegue(withIdentifier: segueID, sender: menu)
