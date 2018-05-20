@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170E213A20B1A1EC0091B857 /* PlatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E213920B1A1EC0091B857 /* PlatView.swift */; };
 		170EB04920B16ED800BFF143 /* PlatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170EB04820B16ED800BFF143 /* PlatCell.swift */; };
 		170EB04B20B1745900BFF143 /* ALaCarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170EB04A20B1745900BFF143 /* ALaCarte.swift */; };
 		170EB04D20B1867400BFF143 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170EB04C20B1867400BFF143 /* DetailController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170E213920B1A1EC0091B857 /* PlatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatView.swift; sourceTree = "<group>"; };
 		170EB04820B16ED800BFF143 /* PlatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatCell.swift; sourceTree = "<group>"; };
 		170EB04A20B1745900BFF143 /* ALaCarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarte.swift; sourceTree = "<group>"; };
 		170EB04C20B1867400BFF143 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				17B0CACA20B09D1800A22175 /* CellCollection.swift */,
 				17B0CAD420B0B7F100A22175 /* Degrade.swift */,
 				170EB04820B16ED800BFF143 /* PlatCell.swift */,
+				170E213920B1A1EC0091B857 /* PlatView.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				17B0CAC720B08B3300A22175 /* MonNav.swift in Sources */,
 				170EB04920B16ED800BFF143 /* PlatCell.swift in Sources */,
 				17B0CAC120B066FA00A22175 /* Constantes.swift in Sources */,
+				170E213A20B1A1EC0091B857 /* PlatView.swift in Sources */,
 				17B0CAD520B0B7F100A22175 /* Degrade.swift in Sources */,
 				170EB04B20B1745900BFF143 /* ALaCarte.swift in Sources */,
 				17B0CAD120B0A59E00A22175 /* Menu.swift in Sources */,
